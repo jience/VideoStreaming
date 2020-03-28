@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OpenCV摄像头视频流显示</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/common.css') }}">
+</head>
+<body>
+<div class="head">
+  <h1>OpenCV摄像头视频流显示</h1>
+</div>
+<div class="mainbox">
+  <div class="col-md-4 col-md-offset-4">
+    <img src="{{ url_for('video_feed') }}">
+  </div>
+</div>
+<div class="back"></div>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    /****/
+    $(document).ready(function () {
+        var whei = $(window).width();
+        $("html").css({fontSize: whei / 20});
+        $(window).resize(function () {
+            var whei = $(window).width();
+            $("html").css({fontSize: whei / 20})
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*, body {
+    padding: 0px;
+    margin: 0px;
+    color: #222;
+    font-family: "微软雅黑";
+}
+
+@font-face {
+    font-family: electronicFont;
+    src: url(../font/DS-DIGIT.TTF)
+}
+
+body {
+    background: #000d4a url(../images/bg.jpg) center top;
+    background-size: cover;
+    color: #666;
+    font-size: .1rem;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+.head {
+    height: 1.05rem;
+    background: url(../images/head_bg.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.head h1 {
+    color: #fff;
+    text-align: center;
+    font-size: .4rem;
+    line-height: .8rem;
+}
+
+.mainbox {
+    padding: .1rem .1rem 0rem .1rem;
+}
+
+.boxall {
+    border: 1px solid rgba(25, 186, 139, .17);
+    padding: 0 .2rem .4rem .15rem;
+    background: rgba(255, 255, 255, .04) url(../images/line.png);
+    background-size: 100% auto;
+    position: relative;
+    margin-bottom: .15rem;
+    z-index: 10;
+}
+
+.boxall:before,
+.boxall:after {
+    position: absolute;
+    width: .1rem;
+    height: .1rem;
+    content: "";
+    border-top: 2px solid #02a6b5;
+    top: 0;
+}
+
+.boxall:before, .boxfoot:before {
+    border-left: 2px solid #02a6b5;
+    left: 0;
+}
+
+.boxall:after, .boxfoot:after {
+    border-right: 2px solid #02a6b5;
+    right: 0;
+}
+
+.alltitle {
+    font-size: .2rem;
+    color: #fff;
+    text-align: center;
+    line-height: .5rem;
+}
+
+.boxfoot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.boxfoot:before,
+.boxfoot:after {
+    position: absolute;
+    width: .1rem;
+    height: .1rem;
+    content: "";
+    border-bottom: 2px solid #02a6b5;
+    bottom: 0;
+}
+
+.bar {
+    background: rgba(101, 132, 226, .1);
+    padding: .15rem;
+}
+
+.barbox li, .barbox2 li {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.barbox:before,
+.barbox:after {
+    position: absolute;
+    width: .3rem;
+    height: .1rem;
+    content: "";
+}
+
+.barbox:before {
+    border-left: 2px solid #02a6b5;
+    left: 0;
+    border-top: 2px solid #02a6b5;
+}
+
+.barbox:after {
+    border-right: 2px solid #02a6b5;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid #02a6b5;
+}
+
+.barbox li:first-child:before {
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 1px;
+    background: rgba(255, 255, 255, .2);
+    right: 0;
+    top: 25%;
+}
+
+.barbox {
+    border: 1px solid rgba(25, 186, 139, .17);
+    position: relative;
+}
+
+.barbox li {
+    font-size: .7rem;
+    color: #ffeb7b;
+    padding: .05rem 0;
+    font-family: electronicFont;
+    font-weight: bold;
+}
+
+.barbox2 li {
+    font-size: .19rem;
+    color: rgba(255, 255, 255, .7);
+    padding-top: .1rem;
+}

@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IDE
+.idea/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
